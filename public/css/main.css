@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 1em;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #222;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em 5px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #B3B300;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+input {
+  width: 240px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+main {
+  margin-top: 104px;
+}
+
+.masthead {
+  height: 220px;
+  text-align: center;
+  font-size: 2em;
+  box-sizing: border-box;
+  padding: 0.5em 0;
+  background-color: #424242;
+  color: #E4E4CE;
+  font-family: 'KoHo', sans-serif;
+}
+
+.display {
+  margin: auto;
+}
+
+figure {
+  height: 250px;
+  background-color: tan;
+  margin: 15px;
+}
