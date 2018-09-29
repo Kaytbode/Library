@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=KoHo|Titillium+Web" rel="stylesheet">
   <title><%=title%></title>
 </head>
@@ -22,14 +22,15 @@
       <h1><%=title%></h1>
     </div>
     <div class="display">
+    <%books.forEach(book=> {%>
       <figure>
+        <figcaption>
+          <a href="/books/<%=book._id%>">
+          <h2><%=book.title%></h2>
+          </a>          
+        </figcaption>
       </figure>
-      <figure>
-      </figure>
-      <figure>
-      </figure>
-      <figure>
-      </figure>
+    <%})%>
     </div>
   </main>
 </body>
