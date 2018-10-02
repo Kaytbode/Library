@@ -22,14 +22,39 @@
       <h1><%=title%></h1>
     </div>
     <div class="display">
-      <figure>
-      </figure>
-      <figure>
-      </figure>
-      <figure>
-      </figure>
-      <figure>
-      </figure>
+      <form name="signIn" action="/auth/signIn/" method="post">
+        <h2>Already a member? sign in</h2>
+        <div>
+          <label for="userName"> User Name </label>
+          <input type="text" id="userName" name="userName">
+        </div>
+        <div>
+          <label for="passWord"> Password </label>
+          <input type="password" id="passWord" name="passWord">
+        </div>
+        <button>Sign in</button>
+      </form>
+
+      <form name="signUp" action="/auth/signUp/" method="post">
+        <h2>Sign up to view books</h2>
+        <div>
+          <label for="firstName"> First Name </label>
+          <input type="text" id="firstName" name="firstName">
+        </div>
+        <div>
+          <label for="lastName"> Last Name </label>
+          <input type="text" id="lastName" name="lastName">
+        </div>
+        <div>
+          <label for="userName"> User Name </label>
+          <input type="text" id="userName" name="userName">
+        </div>
+        <div>
+          <label for="passWord"> Password </label>
+          <input type="password" id="passWord" name="passWord">
+        </div>
+        <button>Sign up</button>
+      </form>
     </div>
   </main>
 </body>
