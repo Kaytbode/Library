@@ -6,29 +6,47 @@ const adminRoute = express.Router();
 
 const books = [
   {
-    title: 'War and Peace',
-    genre: 'Fiction',
-    author: 'Lev Tolstoy',
+    title: 'MongoDB: The Definitive Guide',
+    genre: 'Science',
+    author: 'Kristina Chodorow',
+    bookId: 9418297,
     read: false
   },
   {
-    title: 'War and Peace',
-    genre: 'Fiction',
-    author: 'Levo Tolstoy',
+    title: '50 Tips and Tricks for MongoDB Developers',
+    genre: 'Science',
+    author: 'Kristina Chodorow',
+    bookId: 11356745,
     read: false
   },
   {
-    title: 'War and Peace',
-    genre: 'Fiction',
-    author: 'Leva Tolstoy',
+    title: 'Scaling MongoDB',
+    genre: 'Science',
+    author: 'Kristina Chodorow',
+    bookId: 10412675,
     read: false
   },
   {
-    title: 'War and Peace',
-    genre: 'Fiction',
-    author: 'Levi Tolstoy',
+    title: 'Mongodb: The Definitive Guide (Revised)',
+    genre: 'Science',
+    author: 'Kristina Chodorow',
+    bookId: 22492060,
     read: false
   },
+  {
+    title: 'Scaling MongoDB: Sharding, Cluster Setup, and Administration',
+    genre: 'Science',
+    author: 'Kristina Chodorow',
+    bookId: 35080434,
+    read: false
+  },
+  {
+    title: 'Mongodb: The Definitive Guide: Powerful and Scalable Data Storage',
+    genre: 'Science',
+    author: 'Kristina Chodorow',
+    bookId: 32758030,
+    read: false
+  }
 ];
 
 const router = (nav) => {

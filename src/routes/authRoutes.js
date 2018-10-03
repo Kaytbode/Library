@@ -29,7 +29,7 @@ const router = () => {
           debug(err);
         }
       }());
-    });
+  });
 
   authRouter.route('/signIn')
     .post(passport.authenticate('local', {

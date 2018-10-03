@@ -23,9 +23,11 @@
     </div>
     <div class="display">
       <figure>
+        <img src="<%=book.details.image_url%>">
         <figcaption>
           <a href="<%=book._id%>">
           <h2><%=book.title%></h2>
+          <p><%-book.details.description%></p>
           </a>          
         </figcaption>
       </figure>
