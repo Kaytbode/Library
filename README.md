@@ -19,7 +19,7 @@ in order for the application to run on the desired port.
 To run the application, type `npm start` on your terminal.
 
 ### Installing
-You will have to **MongoDB**, on your local machine. Usage and installation depends on the operating system you are
+You will have to install **MongoDB**, on your local machine. Usage and installation depends on the operating system you are
 using. Follow the [site's](https://www.mongodb.com/download-center) guide on installation.
 
 ## Built with
