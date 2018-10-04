@@ -10,21 +10,7 @@
 </head>
 <body>
   <header>
-    <nav>
-      <a href="/">Home</a>
-      <% nav.forEach(n=> { %>
-        <a href="<%=n.link%>"><%=n.title%></a>
-      <%})%>
-    </nav>
-    <input type="search" class="nav-search">
-  </header>
-  <main>
-    <div class="masthead">
-      <h1><%=title%></h1>
-    </div>
-    <div class="display">
-      <form name="signIn" action="/auth/signIn/" method="post">
-        <h2>Already registered?</h2>
+    <form name="signIn" action="/auth/signIn/" method="post">
         <div class="input-box">
           <label for="userName"> User Name </label>
           <input type="text" id="userName1" name="userName">
@@ -34,8 +20,13 @@
           <input type="password" id="passWord1" name="passWord">
         </div>
         <button>Sign in</button>
-      </form>
-
+    </form>
+  </header>
+  <main>
+    <div class="masthead">
+      <h1><%=title%></h1>
+    </div>
+    <div class="display">
       <form name="signUp" action="/auth/signUp/" method="post">
         <h2>Sign up to view books</h2>
         <div class="input-box">

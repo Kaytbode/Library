@@ -1,5 +1,14 @@
+header .input-box {
+    max-width: 500px;
+    margin: auto;
+}
+
 nav {
     font-size: 20px;
+}
+
+main {
+    margin-top: 220px;
 }
 
 .masthead {

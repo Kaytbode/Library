@@ -4,12 +4,23 @@ body {
 
 header {
   text-align: center;
-  padding-bottom: 1em;
+  padding: 1em 0;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   background-color: #222;
+}
+
+header label {
+  color: #BB9354;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+header button {
+  background-color: inherit;
+  border: none;
+  color: #00FF00;
 }
 
 nav {
@@ -34,7 +45,7 @@ a {
 }
 
 main {
-  margin-top: 104px;
+  margin-top: 240px;
 }
 
 .masthead {
