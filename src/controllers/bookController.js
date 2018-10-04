@@ -12,7 +12,7 @@ class BookController {
   static getIndex(nav) {
     return (req, res) => {
       const { url, dbName } = BookController.DATABASE_URL;
-      
+    
       (async function mongo() {
         let client;
         try {

@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=KoHo|Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" media="screen and (min-width: 390px)" href="css/medium.css">
+  <link href="https://fonts.googleapis.com/css?family=KoHo|Titillium+Web|Charmonman|Quicksand" rel="stylesheet">
   <title><%=title%></title>
 </head>
 <body>
@@ -15,7 +16,7 @@
         <a href="<%=n.link%>"><%=n.title%></a>
       <%})%>
     </nav>
-    <input type="search">
+    <input type="search" class="nav-search">
   </header>
   <main>
     <div class="masthead">
@@ -23,33 +24,33 @@
     </div>
     <div class="display">
       <form name="signIn" action="/auth/signIn/" method="post">
-        <h2>Already a member? sign in</h2>
-        <div>
+        <h2>Already registered?</h2>
+        <div class="input-box">
           <label for="userName"> User Name </label>
-          <input type="text" id="userName" name="userName">
+          <input type="text" id="userName1" name="userName">
         </div>
-        <div>
+        <div class="input-box">
           <label for="passWord"> Password </label>
-          <input type="password" id="passWord" name="passWord">
+          <input type="password" id="passWord1" name="passWord">
         </div>
         <button>Sign in</button>
       </form>
 
       <form name="signUp" action="/auth/signUp/" method="post">
         <h2>Sign up to view books</h2>
-        <div>
+        <div class="input-box">
           <label for="firstName"> First Name </label>
           <input type="text" id="firstName" name="firstName">
         </div>
-        <div>
+        <div class="input-box">
           <label for="lastName"> Last Name </label>
           <input type="text" id="lastName" name="lastName">
         </div>
-        <div>
+        <div class="input-box">
           <label for="userName"> User Name </label>
           <input type="text" id="userName" name="userName">
         </div>
-        <div>
+        <div class="input-box">
           <label for="passWord"> Password </label>
           <input type="password" id="passWord" name="passWord">
         </div>
