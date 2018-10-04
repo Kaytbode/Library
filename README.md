@@ -13,7 +13,7 @@ The application runs on port **4000** but you can modify that in the `package.js
 app to run on another port.
 
 The application uses `DEBUG` dependency to print out to the console. if you are using a **UNIX** machine, you will
-have to alter the **start** property of the `NPM scripts` to **DEBUG=app, app:* nodemon app.js**,
+have to alter the **start** property of the `NPM scripts` to __DEBUG=app, app:* nodemon app.js__,
 in order for the application to run on the desired port.
 
 To run the application, type `npm start` on your terminal.
