@@ -9,27 +9,19 @@
 </head>
 <body>
   <header>
+    <h1><%=title%></h1>
     <nav>
-      <a href="/">Home</a>
-      <% nav.forEach(n=> { %>
-        <a href="<%=n.link%>"><%=n.title%></a>
-      <%})%>
+      <a href="">Logout</a>
     </nav>
-    <input type="search">
   </header>
   <main>
-    <div class="masthead">
-      <h1><%=title%></h1>
-    </div>
-    <div class="display">
+    <div class="book-box">
     <%books.forEach(book=> {%>
-      <figure>
-        <figcaption>
-          <a href="/books/<%=book._id%>">
-          <h2><%=book.title%></h2>
-          </a>          
-        </figcaption>
-      </figure>
+    <div class="books">
+      <a href="/books/<%=book._id%>">
+        <h2><%=book.title%></h2>
+      </a>
+    </div>          
     <%})%>
     </div>
   </main>

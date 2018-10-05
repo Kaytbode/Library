@@ -33,7 +33,7 @@ const router = () => {
 
   authRouter.route('/signIn')
     .post(passport.authenticate('local', {
-      successRedirect: '/auth/profile',
+      successRedirect: '/books',
       failureRedirect: '/'
     }));
 

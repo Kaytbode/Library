@@ -9,18 +9,13 @@
 </head>
 <body>
   <header>
-    <nav>
-      <a href="/">Home</a>
-      <% nav.forEach(n=> { %>
-        <a href="<%=n.link%>"><%=n.title%></a>
-      <%})%>
+    <h1><%=title%></h1>
+    <nav class="book-nav">
+      <a href="/books">Books</a>
+      <a href="">Logout</a>
     </nav>
-    <input type="search">
   </header>
   <main>
-    <div class="masthead">
-      <h1><%=title%></h1>
-    </div>
     <div class="display">
       <figure>
         <img src="<%=book.details.image_url%>">

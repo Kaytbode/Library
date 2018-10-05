@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  width: 100%;
 }
 
 header {
@@ -10,6 +11,15 @@ header {
   right: 0;
   top: 0;
   background-color: #222;
+  height: 220px;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #BB9354;
+  text-transform: uppercase;
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 5px;
 }
 
 header label {
@@ -24,15 +34,23 @@ header button {
 }
 
 nav {
+  padding: 1em;
+  text-align: right;
+}
+
+.book-nav {
   display: flex;
   justify-content: space-evenly;
-  padding: 1em 5px;
-  text-transform: uppercase;
+}
+
+header a {
+  font-size: 1.5em;
+  text-align: right;
+  color: tan;
 }
 
 a {
   text-decoration: none;
-  color: #B3B300;
   font-family: 'Titillium Web', sans-serif;
 }
 
@@ -45,7 +63,7 @@ a {
 }
 
 main {
-  margin-top: 240px;
+  margin-top: 250px;
 }
 
 .masthead {
@@ -57,6 +75,7 @@ main {
   background-color: #424242;
   color: #E4E4CE;
   font-family: 'KoHo', sans-serif;
+  letter-spacing: 5px;
 }
 
 .display {
@@ -64,14 +83,41 @@ main {
   text-align: center;
 }
 
+.book-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  text-align: center;
+}
+
+.books {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  margin: 10px auto;
+  padding: 10px;
+}
+
 h2 {
   font-family: 'Quicksand', sans-serif;
+  color: #372B16;
 }
 
 figure {
-  height: 250px;
-  background-color: tan;
-  margin: 15px;
+  min-height: 250px;
+  max-width: 700px;
+  margin: 15px auto;
+  padding: 20px 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-family: 'KoHo', sans-serif;
+  color: #634B27;
+  font-size: 1.3em;
 }
 
 .input-box {
