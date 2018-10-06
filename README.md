@@ -22,6 +22,8 @@ To run the application, type `npm start` on your terminal.
 You will have to install **MongoDB**, on your local machine. Usage and installation depends on the operating system you are
 using. Follow the [site's](https://www.mongodb.com/download-center) guide on installation.
 
+To access the books you will need to register with [goodreads](https://www.goodreads.com/api) to get an API key.
+
 ## Built with
 * [Express](http://expressjs.com/) - web framework 
 * [EJS](http://ejs.co/) - template engine
