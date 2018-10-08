@@ -37,6 +37,12 @@ const router = () => {
       failureRedirect: '/'
     }));
 
+  authRouter.route('/signOut')
+    .get((req, res) => {
+      req.logout();
+      res.redirect('/');
+    });
+
   authRouter.route('/profile')
     .all((req, res, next) => {
       if (req.user) next();

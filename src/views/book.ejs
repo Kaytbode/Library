@@ -12,7 +12,9 @@
     <h1><%=title%></h1>
     <nav class="book-nav">
       <a href="/books">Books</a>
-      <a href="">Logout</a>
+      <form name="signOut" action="/auth/signOut/" method="get">
+        <button>Sign Out</button>
+      </form>
     </nav>
   </header>
   <main>
