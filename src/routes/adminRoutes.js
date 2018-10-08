@@ -5,7 +5,7 @@ const debug = require('debug')('app:adminRoutes');
 const adminRoute = express.Router();
 
 /* Add your books here */
-// const books = [
+const books = [
 //   {
 //     title: 'MongoDB: The Definitive Guide',
 //     genre: 'Science',
@@ -48,7 +48,7 @@ const adminRoute = express.Router();
 //     bookId: 32758030,
 //     read: false
 //   }
-// ];
+];
 
 const router = () => {
   adminRoute.route('/')
