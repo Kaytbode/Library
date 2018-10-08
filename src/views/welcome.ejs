@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=KoHo|Titillium+Web" rel="stylesheet">
+  <title><%=title%></title>
+</head>
+<body>
+  <header>
+    <form name="signIn" action="/auth/signIn/" method="post">
+        <div class="input-box">
+          <label for="userName"> User Name </label>
+          <input type="text" id="userName1" name="userName">
+        </div>
+        <div class="input-box">
+          <label for="passWord"> Password </label>
+          <input type="password" id="passWord1" name="passWord">
+        </div>
+        <button>Sign in</button>
+    </form>
+  </header>
+  <main class="welcome">
+     Your registration was successful! 
+  </main>
+</body>
+</html>

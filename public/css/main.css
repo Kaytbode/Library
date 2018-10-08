@@ -145,3 +145,10 @@ p {
   color: #634B27;
   font-size: 1.3em;
 }
+/* welcome */
+.welcome {
+  padding: 1em 0;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: 'Charmonman', cursive;
+}

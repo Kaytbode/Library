@@ -23,7 +23,7 @@ const router = () => {
           const result = await collect.insertOne(user);
 
           req.login(result.ops[0], () => {
-            res.redirect('/auth/profile');
+            res.redirect('/welcome');
           });
         } catch (err) {
           debug(err);

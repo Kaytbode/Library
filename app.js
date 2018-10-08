@@ -35,6 +35,15 @@ app.use('/books', bookRouter);
 app.use('/admin', adminRouter);
 app.use('/auth', authRouter);
 
+app.get('/welcome', (req, res) => {
+  res.render(
+    'welcome',
+    {
+      title: 'Library',
+    }
+  );
+});
+
 app.get('/', (req, res) => {
   res.render(
     'index',
