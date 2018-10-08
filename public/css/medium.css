@@ -1,28 +1,22 @@
-header .input-box {
-    max-width: 500px;
-    margin: auto;
-}
-
-nav {
-    font-size: 20px;
-}
-
+/* all */
 main {
     margin-top: 220px;
 }
 
-.masthead {
-    font-size: 2.5em;
-}
-
-.display {
+/* index route */
+header .input-box {
     max-width: 500px;
+    margin: auto;
 }
 
 .input-box {
     display: flex;
     justify-content: center;
     padding: 10px 20px;
+}
+
+.masthead {
+    font-size: 2.5em;
 }
 
 label {
@@ -39,3 +33,21 @@ input {
 button {
     font-size: 20px;
 }
+
+/* index and book */
+.display {
+    max-width: 500px;
+}
+
+/* booklist and book */
+nav {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+

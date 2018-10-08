@@ -1,3 +1,4 @@
+/*  applies to index, book and bookList routes */
 body {
   margin: 0;
   width: 100%;
@@ -14,14 +15,16 @@ header {
   height: 220px;
 }
 
-header h1 {
-  font-size: 2em;
-  color: #BB9354;
-  text-transform: uppercase;
-  font-family: 'Titillium Web', sans-serif;
-  letter-spacing: 5px;
+main {
+  margin-top: 250px;
 }
 
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  color: #372B16;
+}
+
+/* index route only */
 header label {
   color: #BB9354;
   font-family: 'Titillium Web', sans-serif;
@@ -33,37 +36,8 @@ header button {
   color: #00FF00;
 }
 
-nav {
-  padding: 1em;
-  text-align: right;
-}
-
-.book-nav {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-header a {
-  font-size: 1.5em;
-  text-align: right;
-  color: tan;
-}
-
-a {
-  text-decoration: none;
-  font-family: 'Titillium Web', sans-serif;
-}
-
-.nav-search {
-  width: 240px;
-  text-align: center;
+.input-box {
   padding: 5px;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-main {
-  margin-top: 250px;
 }
 
 .masthead {
@@ -76,52 +50,6 @@ main {
   color: #E4E4CE;
   font-family: 'KoHo', sans-serif;
   letter-spacing: 5px;
-}
-
-.display {
-  margin: auto;
-  text-align: center;
-}
-
-.book-box {
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  text-align: center;
-}
-
-.books {
-  width: 200px;
-  height: 200px;
-  background-color: #ccc;
-  margin: 10px auto;
-  padding: 10px;
-}
-
-h2 {
-  font-family: 'Quicksand', sans-serif;
-  color: #372B16;
-}
-
-figure {
-  min-height: 250px;
-  max-width: 700px;
-  margin: 15px auto;
-  padding: 20px 10px;
-}
-
-img {
-  max-width: 100%;
-}
-
-p {
-  font-family: 'KoHo', sans-serif;
-  color: #634B27;
-  font-size: 1.3em;
-}
-
-.input-box {
-  padding: 5px;
 }
 
 label {
@@ -146,4 +74,74 @@ button {
   font-weight: 600;
   padding: 10px 1em;
   margin-bottom: 10px;
+}
+
+/* index and book routes */
+.display {
+  margin: auto;
+  text-align: center;
+}
+
+/* book and bookList routes only */
+header h1 {
+  font-size: 2em;
+  color: #BB9354;
+  text-transform: uppercase;
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 5px;
+}
+
+header a {
+  font-size: 1.5em;
+  text-align: right;
+  color: tan;
+}
+
+nav {
+  padding: 1em;
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/* booklist route */
+.book-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  text-align: center;
+}
+
+.books {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+/* book route */
+.book-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+figure {
+  min-height: 250px;
+  max-width: 700px;
+  margin: 15px auto;
+  padding: 20px 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-family: 'KoHo', sans-serif;
+  color: #634B27;
+  font-size: 1.3em;
 }
