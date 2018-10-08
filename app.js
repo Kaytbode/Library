@@ -4,7 +4,6 @@ const morgan = require('morgan');
 const debug = require('debug')('app');
 const path = require('path');
 const bodyParser = require('body-parser');
-const passport = require('passport');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 
@@ -29,8 +28,8 @@ const nav = [
 ];
 
 const bookRouter = require('./src/routes/bookRoutes')(nav);
-const adminRouter = require('./src/routes/adminRoutes')(nav);
-const authRouter = require('./src/routes/authRoutes')(nav);
+const adminRouter = require('./src/routes/adminRoutes')();
+const authRouter = require('./src/routes/authRoutes')();
 
 app.use('/books', bookRouter);
 app.use('/admin', adminRouter);

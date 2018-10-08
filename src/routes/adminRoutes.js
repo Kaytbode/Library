@@ -4,7 +4,7 @@ const debug = require('debug')('app:adminRoutes');
 
 const adminRoute = express.Router();
 
-/* Add your books here*/
+/* Add your books here */
 // const books = [
 //   {
 //     title: 'MongoDB: The Definitive Guide',
@@ -50,7 +50,7 @@ const adminRoute = express.Router();
 //   }
 // ];
 
-const router = (nav) => {
+const router = () => {
   adminRoute.route('/')
     .get((req, res) => {
       const url = 'mongodb://localhost:27017';

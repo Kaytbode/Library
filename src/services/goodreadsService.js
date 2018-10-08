@@ -4,7 +4,7 @@ const debug = require('debug')('app:goodreadsService');
 
 const parser = xml2js.Parser({ explicitArray: false });
 // you will have to get yours....
-const API_KEY = `4AcUrYrpY3jO72H6fnP8MQ`;
+const API_KEY = '4AcUrYrpY3jO72H6fnP8MQ';
 
 class BookService {
   static getBookById(id) {
