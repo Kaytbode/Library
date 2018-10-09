@@ -20,11 +20,16 @@ const router = () => {
           const db = client.db(dbName);
           const collect = db.collection('users');
           const user = { userName, passWord };
-          const result = await collect.insertOne(user);
 
-          req.login(result.ops[0], () => {
-            res.redirect('/welcome');
-          });
+          if (userName && passWord) {
+            const result = await collect.insertOne(user);
+
+            req.login(result.ops[0], () => {
+              res.redirect('/welcome');
+            });
+          }
+          res.redirect('/');
+          throw user;
         } catch (err) {
           debug(err);
         }
